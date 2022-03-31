@@ -2,7 +2,7 @@
     .equ 	SWI_PrInt,0x6b
     .equ 	Stdout,1 	
 	.equ	Null,0x00 
-    .equ    N, 2
+    .equ    N, 4
 	.equ 	SWI_Exit,0x11 	
 	.text
 _start:
@@ -27,7 +27,6 @@ Loop:
     mov 	pc, lr 
 
  	.DATA		
-Arr1: 	.WORD 	10, 20
-Arr2: 	.WORD 	8, 17	
-Result:	.SPACE	4
+Arr1: 	.WORD 	10, 20, 4, 271
+Arr2: 	.WORD 	8, 17, 1, 39	
  	.END
